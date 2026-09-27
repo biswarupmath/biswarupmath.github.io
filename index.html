@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biswarup Saha - Academic Profile</title>
+    <!-- Pulls in Tailwind for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Icons for LinkedIn, Google Scholar, etc -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* A crisp, modern, tech-focused font */
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap');
+        body { font-family: 'Space Grotesk', sans-serif; }
+        
+        /* Dark mode Glassmorphism effect */
+        .glass {
+            background: rgba(17, 24, 39, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Smooth tab animations */
+        .tab-content { display: none; animation: fadeIn 0.4s ease-in-out; }
+        .tab-content.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
+        
+        /* Glowing active button */
+        .nav-btn.active { 
+            background: rgba(56, 189, 248, 0.2); 
+            border: 1px solid rgba(56, 189, 248, 0.5);
+            color: #38bdf8;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-slate-900 to-black min-h-screen text-gray-200 selection:bg-cyan-500 selection:text-white">
+
+<!-- Floating Glass Navigation Menu -->
+<nav class="fixed top-4 left-1/2 transform -translate-x-1/2 glass px-2 py-2 rounded-full shadow-2xl z-50 w-11/12 max-w-2xl flex justify-between items-center overflow-x-auto border border-gray-700">
+    <button onclick="openTab('home')" class="nav-btn active px-4 py-2 rounded-full text-sm font-semibold transition-all whitespace-nowrap text-gray-300 hover:text-cyan-400">🏠 Home</button>
+    <button onclick="openTab('education')" class="nav-btn px-4 py-2 rounded-full text-sm font-semibold transition-all whitespace-nowrap text-gray-300 hover:text-cyan-400">🎓 Education</button>
+    <button onclick="openTab('research')" class="nav-btn px-4 py-2 rounded-full text-sm font-semibold transition-all whitespace-nowrap text-gray-300 hover:text-cyan-400">⚛️ Research</button>
+    <button onclick="openTab('teaching')" class="nav-btn px-4 py-2 rounded-full text-sm font-semibold transition-all whitespace-nowrap text-gray-300 hover:text-cyan-400">👨‍🏫 Teaching</button>
+    <button onclick="openTab('contact')" class="nav-btn px-4 py-2 rounded-full text-sm font-semibold transition-all whitespace-nowrap text-gray-300 hover:text-cyan-400">📬 Contact</button>
+</nav>
+
+<!-- Main Content Area -->
+<main class="pt-32 pb-12 px-4 max-w-3xl mx-auto">
+    
+    <!-- 🏠 HOME TAB -->
+    <div id="home" class="tab-content active glass p-8 rounded-[2rem] shadow-2xl text-center border-t border-gray-700">
+        <!-- Ensure your photo is named exactly profile.jpg -->
+        <img src="profile.jpg" alt="Biswarup Saha" class="w-40 h-40 mx-auto rounded-full object-cover border-4 border-cyan-500 shadow-[0_0_15px_rgba(6,182,212,0.5)] mb-6" onerror="this.src='https://via.placeholder.com/160'">
+        
+        <h1 class="text-4xl md:text-5xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500">
+            Biswarup Saha
+        </h1>
+        <h2 class="text-xl font-semibold text-gray-400 mb-6">Senior Research Fellow @ ISI Bangalore 🇮🇳</h2>
+        
+        <p class="text-gray-300 leading-relaxed mb-4 text-left text-lg">
+            Hello! 👋 I am a Senior Research Fellow at the Indian Statistical Institute, Bangalore Centre. My research lies at the intersection of <strong>Operator Algebras</strong> and <strong>Quantum Information Theory</strong>, where I want to understand how different properties of Quantum dynamical semigroups change with time using operator algebraic techniques.
+        </p>
+        
+        <p class="text-gray-300 leading-relaxed mb-8 text-left text-lg">
+            I am currently pursuing my research under the supervision of <a href="http://www.isibang.ac.in/~bhat/" target="_blank" class="text-cyan-400 font-bold hover:underline">Prof. B. V. Rajarama Bhat</a>.
+        </p>
+        
+        <!-- Action Buttons -->
+        <div class="flex flex-wrap justify-center gap-4 mb-8">
+            <a href="Biswarup_CV-1.pdf" target="_blank" class="bg-cyan-600 text-white px-8 py-3 rounded-full font-bold hover:bg-cyan-500 transition shadow-[0_0_15px_rgba(6,182,212,0.4)] hover:-translate-y-1 transform duration-200">📄 View CV</a>
+            <a href="https://github.com/biswarupmath.github.io" target="_blank" class="glass px-8 py-3 rounded-full font-bold text-gray-200 hover:text-cyan-300 transition shadow-sm hover:-translate-y-1 transform duration-200">💻 GitHub</a>
+        </div>
+
+        <!-- Social & Academic Links Row -->
+        <div class="flex flex-wrap justify-center gap-6 pt-6 border-t border-gray-700">
+            <a href="https://scholar.google.com/citations?user=AqR3zwUAAAAJ&hl=en" target="_blank" class="text-gray-400 hover:text-cyan-400 transition transform hover:scale-110" title="Google Scholar">
+                <i class="fa-brands fa-google fa-2x"></i>
+            </a>
+            <a href="https://arxiv.org/search/math?query=Saha%2C+Biswarup&searchtype=author&abstracts=show&order=-announced_date_first&size=50" target="_blank" class="text-gray-400 hover:text-cyan-400 transition transform hover:scale-110" title="arXiv">
+                <i class="fa-solid fa-file-lines fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/biswarup-saha-634833125/" target="_blank" class="text-gray-400 hover:text-cyan-400 transition transform hover:scale-110" title="LinkedIn">
+                <i class="fa-brands fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://www.researchgate.net/profile/Biswarup-Saha-6" target="_blank" class="text-gray-400 hover:text-cyan-400 transition transform hover:scale-110" title="ResearchGate">
+                <i class="fa-brands fa-researchgate fa-2x"></i>
+            </a>
+            <a href="https://orcid.org/my-orcid?orcid=0009-0007-8965-2484" target="_blank" class="text-gray-400 hover:text-cyan-400 transition transform hover:scale-110" title="ORCID">
+                <i class="fa-brands fa-orcid fa-2x"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- 🎓 EDUCATION TAB -->
+    <div id="education" class="tab-content glass p-8 rounded-[2rem] shadow-2xl border-t border-gray-700">
+        <h2 class="text-3xl font-bold mb-8 border-b border-gray-700 pb-4 text-cyan-400">🎓 Education</h2>
+        <div class="space-y-6">
+            <div class="p-6 bg-gray-800 bg-opacity-50 rounded-3xl shadow-sm border border-gray-700">
+                <h3 class="font-bold text-2xl mb-1 text-gray-100">Ph.D. in Mathematics</h3>
+                <p class="text-cyan-400 font-semibold">Indian Statistical Institute, Bangalore</p>
+                <p class="text-sm text-gray-400 mt-2">2022 - Present</p>
+            </div>
+            <div class="p-6 bg-gray-800 bg-opacity-50 rounded-3xl shadow-sm border border-gray-700">
+                <h3 class="font-bold text-2xl mb-1 text-gray-100">Masters in Mathematics</h3>
+                <p class="text-cyan-400 font-semibold">Indian Statistical Institute, Kolkata</p>
+                <p class="text-sm text-gray-400 mt-2">2020 - 2022</p>
+            </div>
+           <div class="p-6 bg-gray-800 bg-opacity-50 rounded-3xl shadow-sm border border-gray-700">
+                <h3 class="font-bold text-2xl mb-1 text-gray-100">Bachelors in Science</h3>
+                <p class="text-cyan-400 font-semibold">Presidency University, Kolkata</p>
+                <p class="text-sm text-gray-400 mt-2">2017 - 2020</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ⚛️ RESEARCH TAB -->
+    <div id="research" class="tab-content glass p-8 rounded-[2rem] shadow-2xl border-t border-gray-700">
+        <h2 class="text-3xl font-bold mb-6 border-b border-gray-700 pb-4 text-cyan-400">⚛️ Research</h2>
+        <p class="mb-8 text-gray-300 text-lg">My primary research interests revolve around Operator Algebras and their applications to Quantum Information Theory.</p>
+        
+        <h3 class="font-bold text-xl mb-4 text-blue-400">Publications & Preprints</h3>
+        <ul class="space-y-4">
+            
+            <!-- Publication 1 -->
+            <li class="p-6 bg-gray-800 bg-opacity-50 rounded-3xl border-l-4 border-cyan-500 shadow-sm transition hover:bg-gray-800">
+                <strong class="text-lg block mb-1 text-gray-100">Spectral radii for subsets of Hilbert C*-modules and spectral properties of positive maps</strong>
+                <span class="text-gray-400 block mb-2">B.V.R. Bhat, <strong>B. Saha</strong>, & P. Sahasrabuddhe</span>
+                <span class="text-sm text-cyan-200 block mb-3 font-semibold">Positivity 30, 49 (2026)</span>
+                <a href="https://doi.org/10.1007/s11117-026-01207-6" target="_blank" class="text-cyan-400 font-bold hover:underline inline-flex items-center">
+                    <i class="fa-solid fa-link mr-2"></i> View Published Article ↗
+                </a>
+            </li>
+
+            <!-- Preprint 1 -->
+            <li class="p-6 bg-gray-800 bg-opacity-50 rounded-3xl border-l-4 border-purple-500 shadow-sm transition hover:bg-gray-800">
+                <strong class="text-lg block mb-1 text-gray-100">A complete characterization of eventually entanglement breaking unital quantum channels</strong>
+                <span class="text-gray-400 block mb-2">B. V. Rajarama Bhat, Pankaj Dey, and <strong>Biswarup Saha</strong></span>
+                <span class="text-sm text-purple-300 block mb-3 font-semibold">arXiv preprint arXiv:2609.24168 (2026)</span>
+                <a href="https://arxiv.org/abs/2609.24168" target="_blank" class="text-purple-400 font-bold hover:underline inline-flex items-center">
+                    <i class="fa-solid fa-file-pdf mr-2"></i> Read on arXiv ↗
+                </a>
+            </li>
+
+        </ul>
+    </div>
+
+    <!-- 👨‍🏫 TEACHING TAB -->
+    <div id="teaching" class="tab-content glass p-8 rounded-[2rem] shadow-2xl border-t border-gray-700">
+        <h2 class="text-3xl font-bold mb-8 border-b border-gray-700 pb-4 text-cyan-400">👨‍🏫 Teaching</h2>
+        <p class="mb-6 text-gray-400 italic">All teaching duties listed below were undertaken at the Indian Statistical Institute, Bangalore Centre.</p>
+        
+        <ul class="space-y-4">
+            
+            <li class="p-5 bg-gray-800 bg-opacity-50 rounded-2xl shadow-sm border border-gray-700 flex justify-between flex-wrap gap-2">
+                <div>
+                    <strong class="text-lg block mb-1 text-gray-100">Geometry (B.Math III)</strong>
+                    <span class="text-gray-400 text-sm">Instructor: Rumpa Masanta</span>
+                </div>
+                <div class="text-cyan-400 font-semibold mt-1">Jan 2026 — May 2026</div>
+            </li>
+
+            <li class="p-5 bg-gray-800 bg-opacity-50 rounded-2xl shadow-sm border border-gray-700 flex justify-between flex-wrap gap-2">
+                <div>
+                    <strong class="text-lg block mb-1 text-gray-100">Advanced Linear Algebra (M.Math II, B.Math III)</strong>
+                    <span class="text-gray-400 text-sm">Instructor: B. V. Rajarama Bhat</span>
+                </div>
+                <div class="text-cyan-400 font-semibold mt-1">Jan 2025 — May 2025</div>
+            </li>
+
+            <li class="p-5 bg-gray-800 bg-opacity-50 rounded-2xl shadow-sm border border-gray-700 flex justify-between flex-wrap gap-2">
+                <div>
+                    <strong class="text-lg block mb-1 text-gray-100">Game, Graph and Algebra (M.Math II, B.Math III)</strong>
+                    <span class="text-gray-400 text-sm">Instructor: Yogeshwaran Dhandapani</span>
+                </div>
+                <div class="text-cyan-400 font-semibold mt-1">Aug 2024 — Nov 2024</div>
+            </li>
+
+            <li class="p-5 bg-gray-800 bg-opacity-50 rounded-2xl shadow-sm border border-gray-700 flex justify-between flex-wrap gap-2">
+                <div>
+                    <strong class="text-lg block mb-1 text-gray-100">Analysis on Graphs (B.Math III)</strong>
+                    <span class="text-gray-400 text-sm">Instructor: B. V. Rajarama Bhat</span>
+                </div>
+                <div class="text-cyan-400 font-semibold mt-1">Aug 2023 — Nov 2023</div>
+            </li>
+
+        </ul>
+    </div>
+
+    <!-- 📬 CONTACT TAB -->
+    <div id="contact" class="tab-content glass p-8 rounded-[2rem] shadow-2xl border-t border-gray-700 text-center">
+        <h2 class="text-3xl font-bold mb-6 border-b border-gray-700 pb-4 text-cyan-400">📬 Get in Touch</h2>
+        <p class="text-gray-300 mb-8 text-lg leading-relaxed">
+            If you are interested in my research work, have questions about quantum information theory, or just want to discuss mathematics, please feel free to reach out to me!
+        </p>
+        
+        <div class="space-y-4 max-w-md mx-auto">
+            <a href="mailto:brsaha27700@gmail.com" class="block p-5 bg-gray-800 bg-opacity-50 border border-gray-700 rounded-3xl hover:bg-gray-700 transition shadow-sm font-bold text-lg text-cyan-400">
+                <i class="fa-regular fa-envelope mr-2"></i> brsaha27700@gmail.com
+            </a>
+            <a href="mailto:rs_math2201@isibang.ac.in" class="block p-5 bg-gray-800 bg-opacity-50 border border-gray-700 rounded-3xl hover:bg-gray-700 transition shadow-sm font-bold text-lg text-cyan-400">
+                <i class="fa-solid fa-envelope mr-2"></i> rs_math2201@isibang.ac.in
+            </a>
+            
+            <div class="p-6 bg-gray-800 bg-opacity-50 border border-gray-700 rounded-3xl shadow-sm text-left mt-6">
+                <strong class="text-xl block mb-2 text-center border-b border-gray-700 pb-2 text-gray-200">
+                    <i class="fa-solid fa-location-dot text-cyan-500 mr-2"></i> Office Address
+                </strong>
+                <p class="text-gray-400 text-center font-medium leading-relaxed mt-4">
+                    Indian Statistical Institute, Bangalore Centre<br>
+                    8th Mile, Mysore Road, RVCE Post<br>
+                    Bengaluru, Karnataka 560059
+                </p>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<!-- Script that makes the tabs work smoothly -->
+<script>
+    function openTab(tabName) {
+        document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+        document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
+        document.getElementById(tabName).classList.add('active');
+        event.currentTarget.classList.add('active');
+    }
+</script>
+</body>
+</html>
