@@ -39,8 +39,8 @@
 <!-- Floating Glass Navigation Menu -->
 <nav class="fixed top-4 left-1/2 transform -translate-x-1/2 glass px-2 py-2 rounded-full shadow-2xl z-50 w-11/12 max-w-2xl flex justify-between items-center overflow-x-auto border border-gray-700">
     <button onclick="openTab('home')" class="nav-btn active px-4 py-2 rounded-full text-sm font-semibold transition-all whitespace-nowrap text-gray-300 hover:text-cyan-400">🏠 Home</button>
-    <button onclick="openTab('education')" class="nav-btn px-4 py-2 rounded-full text-sm font-semibold transition-all whitespace-nowrap text-gray-300 hover:text-cyan-400">🎓 Education</button>
     <button onclick="openTab('research')" class="nav-btn px-4 py-2 rounded-full text-sm font-semibold transition-all whitespace-nowrap text-gray-300 hover:text-cyan-400">⚛️ Research</button>
+    <button onclick="openTab('education')" class="nav-btn px-4 py-2 rounded-full text-sm font-semibold transition-all whitespace-nowrap text-gray-300 hover:text-cyan-400">🎓 Education</button>
     <button onclick="openTab('teaching')" class="nav-btn px-4 py-2 rounded-full text-sm font-semibold transition-all whitespace-nowrap text-gray-300 hover:text-cyan-400">👨‍🏫 Teaching</button>
     <button onclick="openTab('contact')" class="nav-btn px-4 py-2 rounded-full text-sm font-semibold transition-all whitespace-nowrap text-gray-300 hover:text-cyan-400">📬 Contact</button>
 </nav>
@@ -60,6 +60,7 @@
         
         <p class="text-gray-300 leading-relaxed mb-4 text-left text-lg">
             Hello! 👋 I am a Senior Research Fellow at the Indian Statistical Institute, Bangalore Centre. My research lies at the intersection of <strong>Operator Algebras</strong> and <strong>Quantum Information Theory</strong>.
+        </p>
         
         <p class="text-gray-300 leading-relaxed mb-8 text-left text-lg">
             I am currently pursuing my research under the supervision of <a href="http://www.isibang.ac.in/~bhat/" target="_blank" class="text-cyan-400 font-bold hover:underline">Prof. B. V. Rajarama Bhat</a>.
@@ -68,7 +69,7 @@
         <!-- Action Buttons -->
         <div class="flex flex-wrap justify-center gap-4 mb-8">
             <a href="Biswarup_CV-1.pdf" target="_blank" class="bg-cyan-600 text-white px-8 py-3 rounded-full font-bold hover:bg-cyan-500 transition shadow-[0_0_15px_rgba(6,182,212,0.4)] hover:-translate-y-1 transform duration-200">📄 View CV</a>
-            </div>
+        </div>
 
         <!-- Social & Academic Links Row -->
         <div class="flex flex-wrap justify-center gap-6 pt-6 border-t border-gray-700">
@@ -90,33 +91,18 @@
         </div>
     </div>
 
-    <!-- 🎓 EDUCATION TAB -->
-    <div id="education" class="tab-content glass p-8 rounded-[2rem] shadow-2xl border-t border-gray-700">
-        <h2 class="text-3xl font-bold mb-8 border-b border-gray-700 pb-4 text-cyan-400">🎓 Education</h2>
-        <div class="space-y-6">
-            <div class="p-6 bg-gray-800 bg-opacity-50 rounded-3xl shadow-sm border border-gray-700">
-                <h3 class="font-bold text-2xl mb-1 text-gray-100">Ph.D. in Mathematics</h3>
-                <p class="text-cyan-400 font-semibold">Indian Statistical Institute, Bangalore</p>
-                <p class="text-sm text-gray-400 mt-2">2022 - Present</p>
-            </div>
-            <div class="p-6 bg-gray-800 bg-opacity-50 rounded-3xl shadow-sm border border-gray-700">
-                <h3 class="font-bold text-2xl mb-1 text-gray-100">Masters in Mathematics</h3>
-                <p class="text-cyan-400 font-semibold">Indian Statistical Institute, Kolkata</p>
-                <p class="text-sm text-gray-400 mt-2">2020 - 2022</p>
-            </div>
-           <div class="p-6 bg-gray-800 bg-opacity-50 rounded-3xl shadow-sm border border-gray-700">
-                <h3 class="font-bold text-2xl mb-1 text-gray-100">Bachelors in Science</h3>
-                <p class="text-cyan-400 font-semibold">Presidency University, Kolkata</p>
-                <p class="text-sm text-gray-400 mt-2">2017 - 2020</p>
-            </div>
-        </div>
-    </div>
-
     <!-- ⚛️ RESEARCH TAB -->
     <div id="research" class="tab-content glass p-8 rounded-[2rem] shadow-2xl border-t border-gray-700">
         <h2 class="text-3xl font-bold mb-6 border-b border-gray-700 pb-4 text-cyan-400">⚛️ Research</h2>
-        <p class="mb-8 text-gray-300 text-lg">My primary research interests revolve around Operator Algebras and their applications to Quantum Information Theory, where I want to understand how different properties of quantum dynamical semigroups change with time using operator algebraic techniques.
-        </p></p>
+        <p class="mb-6 text-gray-300 text-lg">My primary research interests revolve around Operator Algebras and their applications to Quantum Information Theory, where I want to understand how different properties of quantum dynamical semigroups change with time using operator algebraic techniques.</p>
+        
+        <h3 class="font-bold text-xl mb-3 text-cyan-400 border-b border-gray-700 pb-2">Collaborators</h3>
+        <p class="mb-8 text-gray-300">
+            I have had the pleasure of collaborating with: <br>
+            <span class="text-gray-100 font-semibold">• Prof. B. V. Rajarama Bhat</span> (ISI Bangalore)<br>
+            <span class="text-gray-100 font-semibold">• Dr. Pankaj Dey</span><br>
+            <span class="text-gray-100 font-semibold">• Dr. Prajakta Sahasrabuddhe</span>
+        </p>
         
         <h3 class="font-bold text-xl mb-4 text-blue-400">Publications & Preprints</h3>
         <ul class="space-y-4">
@@ -142,6 +128,28 @@
             </li>
 
         </ul>
+    </div>
+
+    <!-- 🎓 EDUCATION TAB -->
+    <div id="education" class="tab-content glass p-8 rounded-[2rem] shadow-2xl border-t border-gray-700">
+        <h2 class="text-3xl font-bold mb-8 border-b border-gray-700 pb-4 text-cyan-400">🎓 Education</h2>
+        <div class="space-y-6">
+            <div class="p-6 bg-gray-800 bg-opacity-50 rounded-3xl shadow-sm border border-gray-700">
+                <h3 class="font-bold text-2xl mb-1 text-gray-100">Ph.D. in Mathematics</h3>
+                <p class="text-cyan-400 font-semibold">Indian Statistical Institute, Bangalore</p>
+                <p class="text-sm text-gray-400 mt-2">2022 - Present</p>
+            </div>
+            <div class="p-6 bg-gray-800 bg-opacity-50 rounded-3xl shadow-sm border border-gray-700">
+                <h3 class="font-bold text-2xl mb-1 text-gray-100">Masters in Mathematics</h3>
+                <p class="text-cyan-400 font-semibold">Indian Statistical Institute, Kolkata</p>
+                <p class="text-sm text-gray-400 mt-2">2020 - 2022</p>
+            </div>
+           <div class="p-6 bg-gray-800 bg-opacity-50 rounded-3xl shadow-sm border border-gray-700">
+                <h3 class="font-bold text-2xl mb-1 text-gray-100">Bachelors in Science</h3>
+                <p class="text-cyan-400 font-semibold">Presidency University, Kolkata</p>
+                <p class="text-sm text-gray-400 mt-2">2017 - 2020</p>
+            </div>
+        </div>
     </div>
 
     <!-- 👨‍🏫 TEACHING TAB -->
@@ -205,11 +213,14 @@
                 <strong class="text-xl block mb-2 text-center border-b border-gray-700 pb-2 text-gray-200">
                     <i class="fa-solid fa-location-dot text-cyan-500 mr-2"></i> Office Address
                 </strong>
-                <p class="text-gray-400 text-center font-medium leading-relaxed mt-4">
-                    Indian Statistical Institute, Bangalore Centre<br>
-                    8th Mile, Mysore Road, RVCE Post<br>
-                    Bengaluru, Karnataka 560059
-                </p>
+                <!-- Hyperlinked to Google Maps -->
+                <a href="https://www.google.com/maps/place/Indian+Statistical+Institute,+Bangalore+Centre/@12.9366714,77.4988775,17z" target="_blank" class="block hover:bg-gray-700 p-2 rounded-xl transition duration-200">
+                    <p class="text-gray-400 text-center font-medium leading-relaxed mt-2 hover:text-cyan-400 transition duration-200">
+                        Indian Statistical Institute, Bangalore Centre<br>
+                        8th Mile, Mysore Road, RVCE Post<br>
+                        Bengaluru, Karnataka 560059
+                    </p>
+                </a>
             </div>
         </div>
     </div>
